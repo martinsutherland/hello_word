@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  /* background-color: #2196F3; */
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+#cmd {
+  border: 1px solid lightslategray;
+  background-color: black;
+  width: 800px;
+  height: 400px;
+  color: whitesmoke;
+  font-family: consolas;
+  font-size: small;
+  padding: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#task-bar {
+  border: 1px solid grey;
+  background-color: white;
+  color: black;
+  display: grid;
+  grid-template-columns: auto auto;
+  font-family: Calibri;
+  padding: 0;
+  height: 28px;
 }
+
+#grid-item-1 {
+  display: grid;
+  justify-content: left;
+  font-size: smaller;
+  padding-left: 10px;
+}
+
+#grid-item-1-para {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#grid-item-2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: right;
+  gap: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: smaller;
+  color: black;
+  padding-right: 10px;
+}
+
+
+
+
